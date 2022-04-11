@@ -7,10 +7,11 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
+    font-family: Flaticon;
 }
 
 :root{
-    --color: #47cfac;
+    --color-verde: #47cfac;
 }
 
 a{
@@ -30,16 +31,84 @@ header .header-icons-container{
     width: 100%;
     height: 50px;
     display: grid;
-    background-color: var(--color);
+    background-color: var(--color-verde);
 }
 
 header .header-icons-container .icons{
     width: 300px;
     height: auto;
     display: flex;
-    justify-items: flex-end;
-    align-items: center;
     justify-content: space-between;
+    justify-items: flex-end;
     justify-self: end;
+    align-items: center;
     margin-right: 50px;
+}
+
+header .icons span{
+    color: white;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+nav .nav-logo-container{
+    margin-left: 50px;
+}
+
+nav .nav-logo-container img{
+    width: 220px;
+    margin-top: 10px;
+}
+
+nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav .profile-link a{
+    color: black;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-image: url(../assets/img/Cover.png);
+    background-position: center;
+}
+
+main .main-text-container{
+    color: white;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+main .main-text-container h2{
+    font-size: 50px;
+    font-weight:500;
+}
+
+main .main-button{
+    display: flex;
+    place-content: center;
+}
+
+main .main-button button{
+    background-color:  var(--color-verde);
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 20px;
+    color: black;
 }
