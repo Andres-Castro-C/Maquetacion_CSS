@@ -14,6 +14,7 @@ body{
 
 :root{
     --color-verde: #47cfac;
+    --color-gris: #e6e9ed
 }
 
 a{
@@ -136,32 +137,29 @@ nav .profile-link a{
 }
 
 .main-noticias{
-    height: 520px;
-    padding-left: 200px;
-    padding-right: 200px;
-    background-color: gainsboro;
+    height: auto;
+    padding: 0 50px 40px 50px; 
+    background-color: var(--color-gris);
     display: grid;
-    grid-template-columns: 4fr 4fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+    gap: 20px 10px;
 }
 
-.noticias-container{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    font-size: 20px;
+.noticias-img-container{
+    height: 450px;
+    grid-row: 2;
 }
 
-.noticias-container img{
-    width: 600px;
-    height: 400px;
+.noticias-img-container img{
+    width: 85%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .noticias-text{
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-    padding-left: 100px;
-    text-align: left;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 .noticias-text h1{
@@ -170,13 +168,13 @@ nav .profile-link a{
 }
 
 .noticias-text p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 100;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .noticias-text .button-general{
-    margin-top: 40px;
+    margin-top: 20px;
     width: 120px;
     height: 40px;
     background-color: transparent;
