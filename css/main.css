@@ -331,3 +331,67 @@ nav .profile-link a{
 .main-texto-contacto{
     padding-left: 30px;
 }
+
+.main-precentacion{
+    background-color: var(--color-gris);
+    display: grid;
+    grid-template-columns: 50px repeat(2,1fr) 50px;
+    grid-template-rows: 1fr auto;
+    padding: 50px 0px 30px 0px;
+    gap: 25px 40px;
+    margin: 0 auto;
+}
+
+.main-precentacion img{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+}
+
+.main-precentacion .texto-main-portada h2, p{
+    grid-column: 3;
+    text-align: inherit;
+    place-self: center;
+}   
+
+.texto-main-portada h2{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.texto-main-portada p{
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.texto-container-proyectos{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    /*grid-template-rows: 50px 2fr;*/
+    grid-template-rows: 1fr auto;
+    border-top: 3px solid var(--color-gris);
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main-proyectos h3{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.ideas-txto-proyectos{
+    padding-right: 40px;
+}
+
+.ideas-txto-proyectos h4{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.ideas-txto-proyectos p{
+    font-weight: normal;
+    font-size: 15px;
+}
