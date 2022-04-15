@@ -91,14 +91,13 @@ nav .profile-link a{
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
+    place-content: center;
 }
 
 .home-main section{
-    display: grid;
     grid-column: 2;
     justify-items: center;
     height: 350px;
-    margin-top: 200px;
 }
 
 .home-main-text{
@@ -119,6 +118,7 @@ nav .profile-link a{
     color: black;
     display: grid;
     align-content: center;
+    margin: 0 auto;
 }
 
 .main-button a{
